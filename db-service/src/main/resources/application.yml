@@ -1,0 +1,23 @@
+
+spring:
+  application:
+    name: db-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/micro_service
+    username: root
+    password: root
+  main:
+    allow-bean-definition-overriding: true
+
+server:
+  port: 8081
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+     defaultZone: http://localhost:8083/eureka/
+
+
+
